@@ -284,7 +284,7 @@ html{
 }
 @keyframes htmlcss {
     0%{width: 0%;}
-    100%{width: 89%;}
+    100%{width: 70%;}
 }
 
 .skills .skill .photoshop{
@@ -293,7 +293,7 @@ html{
 }
 @keyframes photoshop {
     0%{width: 0%;}
-    100%{width: 95%;}
+    100%{width: 75%;}
 }
 
 .skills .skill .wordpress{
@@ -302,7 +302,7 @@ html{
 }
 @keyframes wordpress {
     0%{width: 0%;}
-    100%{width: 81%;}
+    100%{width: 82%;}
 }
 
 .skills .skill .drupal{
@@ -311,7 +311,7 @@ html{
 }
 @keyframes drupal {
     0%{width: 0%;}
-    100%{width: 55%;}
+    100%{width: 52%;}
 }
 
 .skills .skill .comunicacion{
@@ -725,3 +725,108 @@ footer .arriba{
 .no-underline {
     text-decoration: none;
 }
+
+.logo-img {
+    width: 80px; /* Ajusta el ancho deseado */
+    height: auto; /* Mantén la proporción de la imagen */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    box-shadow: none; /* Eliminar la sombra si no la deseas */
+}
+
+
+
+
+/* Estilos básicos del carrusel */
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-track-container {
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-slide img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:focus {
+    outline: none;
+}
+
+/* Overlay del proyecto */
+.proyecto .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    display: none;
+    border-radius: 0 0 10px 10px;
+}
+
+.proyecto:hover .overlay {
+    display: block;
+}
+
+.carousel-slide .overlay a h3 {
+    color: white;
+}
+
+
+/* Estilo para enlaces sin subrayado ni cambio de color por defecto */
+.no-decoration {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilo para el efecto hover en h3 */
+.hover-effect {
+    color: inherit; /* Color inicial heredado */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.hover-effect:hover {
+    color: black; /* Cambia a negro al pasar el ratón */
+}
+
+
+
