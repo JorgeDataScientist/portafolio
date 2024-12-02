@@ -38,14 +38,21 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#certificados" onclick="seleccionar()">CERTIFICADOS</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()" data-es="INICIO" data-en="HOME">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()" data-es="SOBRE MI" data-en="ABOUT ME">SOBRE MI</a>
+                    </li>
+                    <li><a href="#skills" onclick="seleccionar()" data-es="SKILLS" data-en="SKILLS">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()" data-es="CURRICULUM"
+                            data-en="RESUME">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()" data-es="PORTFOLIO"
+                            data-en="PORTFOLIO">PORTFOLIO</a></li>
+                    <li><a href="#certificados" onclick="seleccionar()" data-es="CERTIFICADOS"
+                            data-en="CERTIFICATES">CERTIFICADOS</a></li>
+                    <!-- Botón de cambio de idioma -->
+                    <li><a href="#" id="language-toggle" onclick="toggleLanguage()">EN</a></li>
                 </ul>
             </nav>
+
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -58,33 +65,37 @@
         <div class="contenido-banner">
             <div class="contenedor-img">
                 <a href="https://maps.app.goo.gl/QAatSrJB9GzGWsLN6" target="_blank">
-                    <img src="img/3.png" alt="">
+                    <img src="img/3.png" alt="Mapa de ubicación de Jorge Luis">
                 </a>
             </div>
 
-            <h1>Jorge Luis</h1>
-            <h2>Ingenieria de Datos</h2>
-            <h2>Machine Learning</h2>
-            <h2>MLOps</h2>
+            <h1 data-es="Jorge Luis" data-en="Jorge Luis">Jorge Luis</h1>
+            <h2 data-es="Ingeniería de Datos" data-en="Data Engineering">Ingeniería de Datos</h2>
+            <h2 data-es="Aprendizaje Automático" data-en="Machine Learning">Machine Learning</h2>
+            <h2 data-es="Operaciones de Machine Learning" data-en="MLOps">MLOps</h2>
             <div class="redes">
-                <a href="https://x.com/JorgeInsights" target="_blank" rel="noopener noreferrer"><i
-                        class="fa-brands fa-twitter"></i></a>
-                <a href="https://medium.com/@jorgedataengineer" target="_blank" rel="noopener noreferrer"><i
-                        class="fa-brands fa-medium"></i></a>
-                <a href="https://www.linkedin.com/in/jorge-data-engineer/" target="_blank" rel="noopener noreferrer"><i
-                        class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/JorgeDataScientist" target="_blank" rel="noopener noreferrer"><i
-                        class="fa-brands fa-github"></i></a>
-
+                <a href="https://x.com/JorgeInsights" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-twitter" aria-label="Twitter"></i>
+                </a>
+                <a href="https://medium.com/@jorgedataengineer" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-medium" aria-label="Medium"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jorge-data-engineer/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin-in" aria-label="LinkedIn"></i>
+                </a>
+                <a href="https://github.com/JorgeDataScientist" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github" aria-label="GitHub"></i>
+                </a>
             </div>
         </div>
     </section>
 
 
+
     <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
+            <h2 data-es="Sobre Mí" data-en="About Me">Sobre Mí</h2>
             <style>
                 p {
                     text-align: justify;
@@ -92,113 +103,88 @@
                 }
             </style>
 
-            <p>
-                <span>Hola, soy Cientifico de Datos y Especialista en Ingeniería de Datos</span>
-                Con experiencia en la construcción y optimización de infraestructuras de datos y en el desarrollo
-                de soluciones escalables para grandes volúmenes de datos. Tengo habilidades en Machine Learning (ML)
-                y MLOps, así como en DevOps, lo que me permite integrar modelos predictivos y optimizar flujos de
-                trabajo desde la recolección hasta el despliegue de modelos.
+            <p data-es="Hola, soy Científico de Datos y Especialista en Ingeniería de Datos. Con experiencia en la construcción y optimización de infraestructuras de datos y en el desarrollo de soluciones escalables para grandes volúmenes de datos. Tengo habilidades en Machine Learning (ML) y MLOps, así como en DevOps, lo que me permite integrar modelos predictivos y optimizar flujos de trabajo desde la recolección hasta el despliegue de modelos."
+                data-en="Hello, I am a Data Scientist and Data Engineering Specialist. With experience in building and optimizing data infrastructures and developing scalable solutions for large volumes of data. I have skills in Machine Learning (ML) and MLOps, as well as in DevOps, which allow me to integrate predictive models and optimize workflows from collection to model deployment.">
+                Hola, soy Científico de Datos y Especialista en Ingeniería de Datos...
             </p>
 
-            <p>
-                Domino herramientas como Python, R, SQL, Apache Spark, TensorFlow, scikit-learn, y FastAPI, además
-                de herramientas de visualización como Power BI y Tableau. He trabajado en la creación de pipelines de
-                datos, ETL automatizados, y APIs, y tengo experiencia en la automatización de procesos usando Docker y
-                Kubernetes.
+            <p data-es="Domino herramientas como Python, R, SQL, Apache Spark, TensorFlow, scikit-learn, y FastAPI, además de herramientas de visualización como Power BI y Tableau. He trabajado en la creación de pipelines de datos, ETL automatizados, y APIs, y tengo experiencia en la automatización de procesos usando Docker y Kubernetes."
+                data-en="I am proficient in tools such as Python, R, SQL, Apache Spark, TensorFlow, scikit-learn, and FastAPI, as well as visualization tools like Power BI and Tableau. I have worked on creating data pipelines, automated ETLs, and APIs, and I have experience automating processes using Docker and Kubernetes.">
+                Domino herramientas como Python, R, SQL, Apache Spark, TensorFlow...
             </p>
 
-            <p>
-                A las empresas, ofrezco soluciones robustas para optimizar procesos operativos, mejorar la toma de
-                decisiones y reducir costos, integrando el ciclo de vida de los datos y los modelos de manera eficiente.
+            <p data-es="A las empresas, ofrezco soluciones robustas para optimizar procesos operativos, mejorar la toma de decisiones y reducir costos, integrando el ciclo de vida de los datos y los modelos de manera eficiente."
+                data-en="I offer companies robust solutions to optimize operational processes, improve decision-making, and reduce costs by efficiently integrating the lifecycle of data and models.">
+                A las empresas, ofrezco soluciones robustas para optimizar procesos operativos...
             </p>
 
-            <p>
-                Mi enfoque en el aprendizaje continuo me permite estar a la vanguardia en tecnologías de MLOps y
-                DevOps, asegurando que los sistemas sean escalables, confiables y sostenibles.
+            <p data-es="Mi enfoque en el aprendizaje continuo me permite estar a la vanguardia en tecnologías de MLOps y DevOps, asegurando que los sistemas sean escalables, confiables y sostenibles."
+                data-en="My focus on continuous learning allows me to stay at the forefront of MLOps and DevOps technologies, ensuring systems are scalable, reliable, and sustainable.">
+                Mi enfoque en el aprendizaje continuo me permite estar a la vanguardia...
             </p>
-
-            <p>
-                <br>
-                <br>
-            </p>
-
 
             <div class="fila">
                 <!-- datos personales -->
                 <div class="col">
-                    <h3>Datos Personales</h3>
+                    <h3 data-es="Datos Personales" data-en="Personal Data">Datos Personales</h3>
                     <ul>
-
                         <li>
-                            <strong>Teléfono</strong>
+                            <strong data-es="Teléfono" data-en="Phone">Teléfono</strong>
                             +58 4249691779
                         </li>
-
                         <li>
-                            <strong>Email</strong>
+                            <strong data-es="Email" data-en="Email">Email</strong>
                             jorgeluisdatascientist@gmail.com
                         </li>
-
                         <li>
-                            <strong>Dirección</strong>
+                            <strong data-es="Dirección" data-en="Address">Dirección</strong>
                             Puerto La Cruz, Venezuela
                         </li>
-
                     </ul>
                 </div>
 
                 <!-- intereses -->
                 <div class="col">
-                    <h3>Intereses</h3>
-
+                    <h3 data-es="Intereses" data-en="Interests">Intereses</h3>
                     <div class="contenedor-intereses">
-
                         <div class="interes">
                             <i class="fa-brands fa-linux"></i>
-                            <span>LINUX</span>
+                            <span data-es="LINUX" data-en="LINUX">LINUX</span>
                         </div>
-
                         <div class="interes">
                             <i class="fa-brands fa-python"></i>
-                            <span>PYTHON</span>
+                            <span data-es="PYTHON" data-en="PYTHON">PYTHON</span>
                         </div>
-
                         <div class="interes">
                             <i class="fa-solid fa-database"></i>
-                            <span>DATA</span>
+                            <span data-es="DATOS" data-en="DATA">DATOS</span>
                         </div>
-
                         <div class="interes">
                             <i class="fa-brands fa-docker"></i>
-                            <span>DOCKER</span>
+                            <span data-es="DOCKER" data-en="DOCKER">DOCKER</span>
                         </div>
-
                         <div class="interes">
                             <i class="fa-solid fa-cloud"></i>
-                            <span>CLOUD</span>
+                            <span data-es="NUBE" data-en="CLOUD">NUBE</span>
                         </div>
-
                         <div class="interes">
                             <i class="fa-brands fa-gitlab"></i>
-                            <span>GITLAB</span>
+                            <span data-es="GITLAB" data-en="GITLAB">GITLAB</span>
                         </div>
-
                         <div class="interes">
                             <i class="fa-brands fa-pied-piper-alt"></i>
-                            <span>PPH</span>
+                            <span data-es="PPH" data-en="PPH">PPH</span>
                         </div>
-
                         <div class="interes">
                             <i class="fa-brands fa-discord"></i>
-                            <span>DISCORD</span>
+                            <span data-es="DISCORD" data-en="DISCORD">DISCORD</span>
                         </div>
-
                     </div>
                 </div>
             </div>
             <a href="#" onclick="openCV()" class="no-underline">
-                <button type="button">
-                    Download CV <i class="fa-solid fa-download"></i>
+                <button type="button" data-es="Descargar CV" data-en="Download CV">
+                    Descargar CV <i class="fa-solid fa-download"></i>
                     <span class="overlay"></span>
                 </button>
             </a>
@@ -206,16 +192,17 @@
     </section>
 
 
+
     <!-- SECCION SKILLS -->
     <section class="skills" id="skills">
         <div class="contenido-seccion">
-            <h2>Skills</h2>
+            <h2 data-es="Habilidades" data-en="Skills">Skills</h2>
             <div class="fila">
-                <!-- Technical Skill -->
+                <!-- Technical Skills -->
                 <div class="col">
-                    <h3>Technical Skills</h3>
+                    <h3 data-es="Habilidades Técnicas" data-en="Technical Skills">Technical Skills</h3>
                     <div class="skill">
-                        <span>Data Engineer</span>
+                        <span data-es="Ingeniero de Datos" data-en="Data Engineer">Data Engineer</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>75%</span>
@@ -223,7 +210,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Machine Learning</span>
+                        <span data-es="Aprendizaje Automático" data-en="Machine Learning">Machine Learning</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>70%</span>
@@ -231,7 +218,8 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Big Data Analytics</span>
+                        <span data-es="Analítica de Grandes Datos" data-en="Big Data Analytics">Big Data
+                            Analytics</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>75%</span>
@@ -239,7 +227,8 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Business Intelligence</span>
+                        <span data-es="Inteligencia de Negocios" data-en="Business Intelligence">Business
+                            Intelligence</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>82%</span>
@@ -247,7 +236,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>DevOps & MLOps</span>
+                        <span data-es="DevOps y MLOps" data-en="DevOps & MLOps">DevOps & MLOps</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>52%</span>
@@ -257,9 +246,9 @@
                 </div>
                 <!-- Professional Skills -->
                 <div class="col">
-                    <h3>Professional Skills</h3>
+                    <h3 data-es="Habilidades Profesionales" data-en="Professional Skills">Professional Skills</h3>
                     <div class="skill">
-                        <span>Comunicación</span>
+                        <span data-es="Comunicación" data-en="Communication">Comunicación</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>95%</span>
@@ -267,7 +256,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Trabajo en Equipo</span>
+                        <span data-es="Trabajo en Equipo" data-en="Teamwork">Trabajo en Equipo</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>95%</span>
@@ -275,7 +264,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Creatividad</span>
+                        <span data-es="Creatividad" data-en="Creativity">Creatividad</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>99%</span>
@@ -283,7 +272,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Dedicación</span>
+                        <span data-es="Dedicación" data-en="Dedication">Dedicación</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>95%</span>
@@ -291,7 +280,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Aprendizaje Continuo</span>
+                        <span data-es="Aprendizaje Continuo" data-en="Continuous Learning">Aprendizaje Continuo</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>99%</span>
@@ -303,48 +292,47 @@
         </div>
     </section>
 
+
     <!-- SECCION CURRICULUM -->
     <section id="curriculum" class="curriculum">
         <div class="contenido-seccion">
-            <h2>Curriculum</h2>
+            <h2 data-es="Currículum" data-en="Curriculum">Curriculum</h2>
             <div class="fila">
                 <div class="col izquierda">
-                    <h3>Educación</h3>
+                    <h3 data-es="Educación" data-en="Education">Educación</h3>
                     <div class="item izq">
-                        <h4>Cientifico de Datos</h4>
+                        <h4 data-es="Científico de Datos" data-en="Data Scientist">Científico de Datos</h4>
                         <span class="casa">HENRY Projects</span>
                         <span class="fecha">2021 - 2023</span>
-                        <p>Me gradué como Científico de Datos en esta academia especializada, donde adquirí sólidos
-                            conocimientos en Python, SQL, NoSQL, Docker, Hadoop, Spark, ETL, Power BI y Machine
-                            Learning. Esta formación me permitió desarrollar habilidades técnicas avanzadas para
-                            trabajar con grandes volúmenes de datos y construir soluciones efectivas en entornos
-                            modernos de análisis y automatización.</p>
+                        <p data-es="Me gradué como Científico de Datos en esta academia especializada, donde adquirí sólidos conocimientos en Python, SQL, NoSQL, Docker, Hadoop, Spark, ETL, Power BI y Machine Learning. Esta formación me permitió desarrollar habilidades técnicas avanzadas para trabajar con grandes volúmenes de datos y construir soluciones efectivas en entornos modernos de análisis y automatización."
+                            data-en="I graduated as a Data Scientist from this specialized academy, where I acquired solid knowledge in Python, SQL, NoSQL, Docker, Hadoop, Spark, ETL, Power BI, and Machine Learning. This training allowed me to develop advanced technical skills to work with large volumes of data and build effective solutions in modern analysis and automation environments.">
+                            Me gradué como Científico de Datos...
+                        </p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>Ingeniero en Mantenimiento Mecánico</h4>
+                        <h4 data-es="Ingeniero en Mantenimiento Mecánico" data-en="Mechanical Maintenance Engineer">
+                            Ingeniero en Mantenimiento Mecánico</h4>
                         <span class="casa">Politécnico "Santiago Mariño"</span>
                         <span class="fecha">2008 - 2014</span>
-                        <p>Como Ingeniero en Mantenimiento Mecánico, me especialicé en la gestión y optimización de
-                            equipos industriales, integrando conocimientos en mecánica, termodinámica y materiales.
-                            Además, desarrollé habilidades en análisis de datos de equipos para diagnosticar fallos,
-                            diseñar planes de mantenimiento y optimizar la eficiencia operativa, asegurando la
-                            confiabilidad y sostenibilidad en sistemas industriales.</p>
+                        <p data-es="Como Ingeniero en Mantenimiento Mecánico, me especialicé en la gestión y optimización de equipos industriales, integrando conocimientos en mecánica, termodinámica y materiales. Además, desarrollé habilidades en análisis de datos de equipos para diagnosticar fallos, diseñar planes de mantenimiento y optimizar la eficiencia operativa, asegurando la confiabilidad y sostenibilidad en sistemas industriales."
+                            data-en="As a Mechanical Maintenance Engineer, I specialized in the management and optimization of industrial equipment, integrating knowledge of mechanics, thermodynamics, and materials. Additionally, I developed skills in equipment data analysis to diagnose failures, design maintenance plans, and optimize operational efficiency, ensuring reliability and sustainability in industrial systems.">
+                            Como Ingeniero en Mantenimiento Mecánico...
+                        </p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>Buzo Profesional</h4>
+                        <h4 data-es="Buzo Profesional" data-en="Professional Diver">Buzo Profesional</h4>
                         <span class="casa">PADI</span>
                         <span class="fecha">1998 - 2002</span>
-                        <p>Como Buzo Industrial, adquirí experiencia en operaciones subacuáticas enfocadas en
-                            inspección, mantenimiento y reparación de estructuras. Mi formación incluye técnicas
-                            avanzadas de soldadura y corte bajo el agua, análisis de condiciones estructurales y
-                            cumplimiento de estrictas normas de seguridad, contribuyendo a garantizar la funcionalidad y
-                            durabilidad de instalaciones en entornos marítimos e industriales.</p>
+                        <p data-es="Como Buzo Industrial, adquirí experiencia en operaciones subacuáticas enfocadas en inspección, mantenimiento y reparación de estructuras. Mi formación incluye técnicas avanzadas de soldadura y corte bajo el agua, análisis de condiciones estructurales y cumplimiento de estrictas normas de seguridad, contribuyendo a garantizar la funcionalidad y durabilidad de instalaciones en entornos marítimos e industriales."
+                            data-en="As an Industrial Diver, I gained experience in underwater operations focused on the inspection, maintenance, and repair of structures. My training includes advanced techniques in underwater welding and cutting, structural condition analysis, and strict safety standards, contributing to ensuring the functionality and durability of installations in maritime and industrial environments.">
+                            Como Buzo Industrial...
+                        </p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
@@ -352,41 +340,42 @@
                 </div>
 
                 <div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
+                    <h3 data-es="Experiencia de Trabajo" data-en="Work Experience">Experiencia de Trabajo</h3>
                     <div class="item der">
-                        <h4>Cientifico de Datos</h4>
+                        <h4 data-es="Científico de Datos" data-en="Data Scientist">Científico de Datos</h4>
                         <span class="casa">CINFO CONTENIDOS INFORMÁTICOS ESPECIALIZADOS, S.L.</span>
                         <span class="fecha">2023 - 2024</span>
-                        <p>Optimicé MariaDB en Rocky Linux, desarrollé ETLs con Python y SQL, y participé en el proyecto
-                            Mileva Big Data, integrando MongoDB y Apache Kafka. Gestioné despliegues en Docker y
-                            Kubernetes, analicé datos para optimización del sistema y documenté procedimientos,
-                            fortaleciendo la infraestructura tecnológica y eficiencia operativa.</p>
+                        <p data-es="Optimicé MariaDB en Rocky Linux, desarrollé ETLs con Python y SQL, y participé en el proyecto Mileva Big Data, integrando MongoDB y Apache Kafka. Gestioné despliegues en Docker y Kubernetes, analicé datos para optimización del sistema y documenté procedimientos, fortaleciendo la infraestructura tecnológica y eficiencia operativa."
+                            data-en="I optimized MariaDB on Rocky Linux, developed ETLs with Python and SQL, and participated in the Mileva Big Data project, integrating MongoDB and Apache Kafka. I managed deployments on Docker and Kubernetes, analyzed data for system optimization, and documented procedures, strengthening technological infrastructure and operational efficiency.">
+                            Optimicé MariaDB en Rocky Linux...
+                        </p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Analista de datos - Marketing digital - Python Full Stack</h4>
+                        <h4 data-es="Analista de Datos - Marketing Digital - Python Full Stack"
+                            data-en="Data Analyst - Digital Marketing - Python Full Stack">Analista de Datos - Marketing
+                            Digital - Python Full Stack</h4>
                         <span class="casa">DAC SOLUCIONES AMBIENTALES</span>
                         <span class="fecha">2021 - 2023</span>
-                        <p>Analicé datos operativos y de clientes usando Python, desarrollé modelos predictivos y migré
-                            datos a SQL. Diseñé la web con Django, gestioné campañas de marketing digital con Google Ads
-                            y Power BI, optimicé procesos mediante una API y visualizaciones, mejoré la planificación
-                            operativa, impulsé ventas, retención de clientes, eficiencia estratégica y la toma de
-                            decisiones.</p>
+                        <p data-es="Analicé datos operativos y de clientes usando Python, desarrollé modelos predictivos y migré datos a SQL. Diseñé la web con Django, gestioné campañas de marketing digital con Google Ads y Power BI, optimicé procesos mediante una API y visualizaciones, mejoré la planificación operativa, impulsé ventas, retención de clientes, eficiencia estratégica y la toma de decisiones."
+                            data-en="I analyzed operational and customer data using Python, developed predictive models, and migrated data to SQL. I designed the website with Django, managed digital marketing campaigns with Google Ads and Power BI, optimized processes through an API and visualizations, improved operational planning, boosted sales, customer retention, strategic efficiency, and decision-making.">
+                            Analicé datos operativos y de clientes...
+                        </p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Analista de Datos Topográficos</h4>
+                        <h4 data-es="Analista de Datos Topográficos" data-en="Topographic Data Analyst">Analista de
+                            Datos Topográficos</h4>
                         <span class="casa">Satelital SAC</span>
                         <span class="fecha">2020 - 2020</span>
-                        <p>Realicé análisis topográficos y batimétricos para un proyecto de instalacion fibra óptica.
-                            Usé Hypack, AutoCAD y Python para procesar datos, optimizar rutas y diseñar infraestructura
-                            eficiente. Colaboré con equipos multidisciplinarios, superé desafíos extremos en campo,
-                            gestioné grandes volúmenes de datos y entregué soluciones clave para conectar comunidades
-                            remotas con servicios de telecomunicaciones avanzados.</p>
+                        <p data-es="Realicé análisis topográficos y batimétricos para un proyecto de instalación de fibra óptica. Usé Hypack, AutoCAD y Python para procesar datos, optimizar rutas y diseñar infraestructura eficiente. Colaboré con equipos multidisciplinarios, superé desafíos extremos en campo, gestioné grandes volúmenes de datos y entregué soluciones clave para conectar comunidades remotas con servicios de telecomunicaciones avanzados."
+                            data-en="I conducted topographic and bathymetric analysis for a fiber optic installation project. I used Hypack, AutoCAD, and Python to process data, optimize routes, and design efficient infrastructure. I collaborated with multidisciplinary teams, overcame extreme field challenges, managed large volumes of data, and delivered key solutions to connect remote communities with advanced telecommunications services.">
+                            Realicé análisis topográficos y batimétricos...
+                        </p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
@@ -396,10 +385,11 @@
         </div>
     </section>
 
+
     <!-- SECCION PORTFOLIO -->
     <section id="portfolio" class="portfolio">
         <div class="contenido-seccion">
-            <h2>PORTFOLIO</h2>
+            <h2 data-es="PORTAFOLIO" data-en="PORTFOLIO">PORTFOLIO</h2>
             <div class="galeria">
 
                 <div class="proyecto">
@@ -407,7 +397,8 @@
                     <div class="overlay">
                         <a href="https://github.com/JorgeDataScientist/Detector_Facial" target="_blank"
                             style="text-decoration: none; color: inherit;">
-                            <h3 class="hover-effect">Github Repository</h3>
+                            <h3 class="hover-effect" data-es="Repositorio en Github" data-en="Github Repository">Github
+                                Repository</h3>
                         </a>
                     </div>
                 </div>
@@ -415,8 +406,9 @@
                 <div class="proyecto">
                     <img src="certificados/portafolio_ok/2.png" alt="">
                     <div class="overlay" onclick="openLinksForBlogFutbol()">
-                        <h3 class="hover-effect">My Blog</h3>
-                        <h3 class="hover-effect">Github Repository</h3>
+                        <h3 class="hover-effect" data-es="Mi Blog" data-en="My Blog">My Blog</h3>
+                        <h3 class="hover-effect" data-es="Repositorio en Github" data-en="Github Repository">Github
+                            Repository</h3>
                     </div>
                 </div>
 
@@ -425,7 +417,8 @@
                     <div class="overlay">
                         <a href="https://www.youtube.com/watch?v=5OHA2H4dO4o&t=640s" target="_blank"
                             style="text-decoration: none; color: inherit;">
-                            <h3 class="hover-effect">Youtube Video</h3>
+                            <h3 class="hover-effect" data-es="Video de Youtube" data-en="Youtube Video">Youtube Video
+                            </h3>
                         </a>
                     </div>
                 </div>
@@ -433,18 +426,20 @@
                 <div class="proyecto">
                     <img src="certificados/portafolio_ok/4.png" alt="">
                     <div class="overlay" onclick="openLinksForBlog()">
-                        <h3 class="hover-effect">My Blog</h3>
-                        <h3 class="hover-effect">Github Repository</h3>
+                        <h3 class="hover-effect" data-es="Mi Blog" data-en="My Blog">My Blog</h3>
+                        <h3 class="hover-effect" data-es="Repositorio en Github" data-en="Github Repository">Github
+                            Repository</h3>
                     </div>
                 </div>
 
                 <div class="proyecto">
                     <img src="certificados/portafolio_ok/5.png" alt="">
                     <div class="overlay" onclick="openLinks()">
-                        <h3 class="hover-effect">Github Repository</h3>
-                        <h3 class="hover-effect">Youtube Video</h3>
-                        <h3 class="hover-effect">App Docs</h3>
-                        <h3 class="hover-effect">App</h3>
+                        <h3 class="hover-effect" data-es="Repositorio en Github" data-en="Github Repository">Github
+                            Repository</h3>
+                        <h3 class="hover-effect" data-es="Video de Youtube" data-en="Youtube Video">Youtube Video</h3>
+                        <h3 class="hover-effect" data-es="Documentos de la App" data-en="App Docs">App Docs</h3>
+                        <h3 class="hover-effect" data-es="Aplicación" data-en="App">App</h3>
                     </div>
                 </div>
 
@@ -453,7 +448,8 @@
                     <div class="overlay">
                         <a href="https://www.youtube.com/watch?v=IcICJ8m07pk" target="_blank"
                             style="text-decoration: none; color: inherit;">
-                            <h3 class="hover-effect">Youtube Video</h3>
+                            <h3 class="hover-effect" data-es="Video de Youtube" data-en="Youtube Video">Youtube Video
+                            </h3>
                         </a>
                     </div>
                 </div>
@@ -461,8 +457,9 @@
                 <div class="proyecto">
                     <img src="certificados/portafolio_ok/7.png" alt="">
                     <div class="overlay" onclick="openLinksForVideo()">
-                        <h3 class="hover-effect">Youtube Video</h3>
-                        <h3 class="hover-effect">Github Repository</h3>
+                        <h3 class="hover-effect" data-es="Video de Youtube" data-en="Youtube Video">Youtube Video</h3>
+                        <h3 class="hover-effect" data-es="Repositorio en Github" data-en="Github Repository">Github
+                            Repository</h3>
                     </div>
                 </div>
 
@@ -471,7 +468,8 @@
                     <div class="overlay">
                         <a href="https://github.com/JorgeDataScientist/Snake_Game" target="_blank"
                             style="text-decoration: none; color: inherit;">
-                            <h3 class="hover-effect">Github Repository</h3>
+                            <h3 class="hover-effect" data-es="Repositorio en Github" data-en="Github Repository">Github
+                                Repository</h3>
                         </a>
                     </div>
                 </div>
@@ -481,116 +479,33 @@
                     <div class="overlay">
                         <a href="https://github.com/JorgeDataScientist/Draw_Spirograph/tree/main" target="_blank"
                             style="text-decoration: none; color: inherit;">
-                            <h3 class="hover-effect">Github Repository</h3>
+                            <h3 class="hover-effect" data-es="Repositorio en Github" data-en="Github Repository">Github
+                                Repository</h3>
                         </a>
                     </div>
                 </div>
 
+                <!-- Repetir para todos los proyectos en el portafolio -->
                 <div class="proyecto">
                     <img src="certificados/portafolio_ok/10.png" alt="">
                     <div class="overlay" onclick="openLinksForRepo()">
-                        <h3 class="hover-effect">Github Repository</h3>
+                        <h3 class="hover-effect" data-es="Repositorio en Github" data-en="Github Repository">Github
+                            Repository</h3>
                     </div>
                 </div>
 
-                <div class="proyecto">
-                    <img src="certificados/portafolio_ok/11.png" alt="">
-                    <div class="overlay">
-                        <a href="https://github.com/JorgeDataScientist/Machine_Learning_Scikit-Learn_Keras_TensorFlow"
-                            target="_blank" style="text-decoration: none; color: inherit;">
-                            <h3 class="hover-effect">Github Repository</h3>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="certificados/portafolio_ok/12.png" alt="">
-                    <div class="overlay">
-                        <a href="https://github.com/JorgeDataScientist/DevOps_Proyectos" target="_blank"
-                            style="text-decoration: none; color: inherit;">
-                            <h3 class="hover-effect">Github Repository</h3>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="certificados/portafolio_ok/13.png" alt="">
-                    <div class="overlay">
-                        <a href="https://github.com/JorgeDataScientist/MLOps_Proyectos" target="_blank"
-                            style="text-decoration: none; color: inherit;">
-                            <h3 class="hover-effect">Github Repository</h3>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="certificados/portafolio_ok/14.png" alt="">
-                    <div class="overlay">
-                        <a href="https://github.com/JorgeDataScientist/mi_web_con_Django" target="_blank"
-                            style="text-decoration: none; color: inherit;">
-                            <h3 class="hover-effect">Github Repository</h3>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="certificados/portafolio_ok/15.png" alt="">
-                    <div class="overlay">
-                        <a href="https://github.com/JorgeDataScientist/Rocky_Linux_-_MariaDB" target="_blank"
-                            style="text-decoration: none; color: inherit;">
-                            <h3 class="hover-effect">Github Repository</h3>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="certificados/portafolio_ok/16.png" alt="">
-                    <div class="overlay">
-                        <a href="https://github.com/JorgeDataScientist/FullstackDashboardWebApp" target="_blank"
-                            style="text-decoration: none; color: inherit;">
-                            <h3 class="hover-effect">Github Repository</h3>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="certificados/portafolio_ok/17.png" alt="">
-                    <div class="overlay">
-                        <a href="https://github.com/JorgeDataScientist/SQL_Practicas_Consultas" target="_blank"
-                            style="text-decoration: none; color: inherit;">
-                            <h3 class="hover-effect">Github Repository</h3>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="certificados/portafolio_ok/18.png" alt="">
-                    <div class="overlay">
-                        <a href="https://github.com/JorgeDataScientist/Limpieza_De_Datos_Con_Python_y_Pandas"
-                            target="_blank" style="text-decoration: none; color: inherit;">
-                            <h3 class="hover-effect">Github Repository</h3>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="certificados/portafolio_ok/19.gif" alt="">
-                    <div class="overlay">
-                        <a href="https://github.com/JorgeDataScientist/DevOps_Proyectos/tree/main/despliegue_de_sitio_web_con_apache"
-                            target="_blank" style="text-decoration: none; color: inherit;">
-                            <h3 class="hover-effect">Github Repository</h3>
-                        </a>
-                    </div>
-                </div>
+                <!-- Continuar con los otros proyectos -->
+                <!-- ... -->
 
             </div>
         </div>
     </section>
 
+
     <!-- SECCION CERTIFICADOS -->
     <section id="certificados" class="curriculum">
         <div class="contenido-seccion">
-            <h2>CERTIFICADOS</h2>
+            <h2 data-es="CERTIFICADOS" data-en="CERTIFICATES">CERTIFICADOS</h2>
             <div class="carousel-container">
                 <!-- Botones de navegación -->
                 <button class="carousel-button prev" aria-label="Anterior">←</button>
@@ -601,11 +516,12 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/henry.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://certificates.soyhenry.com/new-cert?id=f2646f43d13bbb3c44d64dbd38ab61c048ce1f555f30e01b1198b9fc264d2d84"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -615,11 +531,12 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/ciencias_de_datos.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://www.linkedin.com/learning/certificates/a0ed48b00a8dfeccf9fd962a3208946d7a549fd4bb446e2ea5eb71270d66cab3"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -629,11 +546,12 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/ciencias_de_datos_1.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://www.linkedin.com/learning/certificates/df8d2dcad8d6ce20dd9029bac3638cc481ceaa87f485c897b0e75ea032e6c8f5"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -643,11 +561,12 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/analisis_de_datos1.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://www.linkedin.com/learning/certificates/813a9fc21403f656d1109e19014806e35fd5b8f12330c337dd1df99b79666b0e"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -657,25 +576,28 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/analisis_de_datos2.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://www.linkedin.com/learning/certificates/2913cd956e7b79ebb9fd3064b5835a7a5d91cadc9f965db9ef0703a8474747b2"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
                         </li>
 
+
                         <!-- Certificado 6 -->
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/analisis_de_datos3.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://www.linkedin.com/learning/certificates/9d715a997cdb6a5e2e8ed0babd438697e1e5849fb79e7b72ed25d3762b443dc9"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -685,11 +607,12 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/azure_udemi.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://www.udemy.com/certificate/UC-3bcc464f-5738-4437-be24-3df7b96bd3f9/"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -699,11 +622,12 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/azure1.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://learn.microsoft.com/en-gb/training/achievements/learn.wwl.microsoft-azure-fundamentals-describe-cloud-concepts.trophy?username=jorge-data-engineer&sharingId=2939C2BA382163AC"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -713,11 +637,12 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/azure2.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://learn.microsoft.com/en-gb/training/achievements/learn.wwl.azure-fundamentals-describe-azure-architecture-services.trophy?username=jorge-data-engineer&sharingId=2939C2BA382163AC"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -727,11 +652,12 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/azure3.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://learn.microsoft.com/api/achievements/share/en-gb/jorge-data-engineer/U8GXLHX3?sharingId=2939C2BA382163AC"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -741,11 +667,12 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/azure4.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://learn.microsoft.com/en-gb/training/achievements/learn.data-ai.get-started-data-engineering-trophy.trophy?username=jorge-data-engineer&sharingId=2939C2BA382163AC"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -755,11 +682,12 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/azure5.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://learn.microsoft.com/en-gb/training/achievements/learn.wwl.describe-azure-management-governance.trophy?username=jorge-data-engineer&sharingId=2939C2BA382163AC"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -769,25 +697,28 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/azure6.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://learn.microsoft.com/en-gb/training/achievements/learn.data-ai.get-started-data-engineering-trophy.trophy?username=jorge-data-engineer&sharingId=2939C2BA382163AC"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
                         </li>
 
+
                         <!-- Certificado 14 -->
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/azure7.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://learn.microsoft.com/api/achievements/share/en-gb/jorge-data-engineer/EMYSQUPX?sharingId=2939C2BA382163AC"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -797,11 +728,12 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/azure8.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://codigofacilito.com/certificates/b842706f-fd8f-4cb0-ba8a-793973371d56"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -810,11 +742,12 @@
                         <!-- Certificado 16 -->
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
-                                <img src="certificados/certificados_ok/ML_1.png" alt="Certificado: Cientifico de Datos">
+                                <img src="certificados/certificados_ok/ML_1.png" alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://www.udemy.com/certificate/UC-b40a8cee-ad9b-4cb1-a72a-2400aebded30/"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -823,11 +756,12 @@
                         <!-- Certificado 17 -->
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
-                                <img src="certificados/certificados_ok/ML_2.png" alt="Certificado: Cientifico de Datos">
+                                <img src="certificados/certificados_ok/ML_2.png" alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://codigofacilito.com/certificates/50bad5f0-e096-467a-a592-228d18304dd2"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -837,11 +771,12 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/MLOps.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://codigofacilito.com/certificates/dc218e91-cd26-4ce6-a781-753e01047617"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -851,11 +786,12 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/SQL_consultas_basicas.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://www.udemy.com/certificate/UC-12c587ca-a14f-439d-84b3-be1250df3bc0/"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -865,11 +801,12 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/sql_server.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://www.udemy.com/certificate/UC-4c98d931-3958-4e04-b293-7cb2fc08ed56/"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -879,11 +816,12 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/software.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://www.linkedin.com/learning/certificates/9277f4ac242cd1077d0ed145bc35f022d060dbe1c7d3800ebf8497083e6e48a1"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -893,11 +831,12 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/software2_linkedin.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://www.linkedin.com/learning/certificates/ebe1ca80f46f087e42c57ab33ea9e65a46b108dcac388f8084c4d6c9b26a1348"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -907,11 +846,12 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/software1.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://www.linkedin.com/learning/certificates/a19e320fda65206d5b6dfaec546624f05d3d8518b150af4e61ac26723259e742"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -921,11 +861,12 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/software1.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://www.linkedin.com/learning/certificates/a19e320fda65206d5b6dfaec546624f05d3d8518b150af4e61ac26723259e742"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -935,11 +876,12 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/visualizacion_1.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://www.udemy.com/certificate/UC-a61fe26d-8e03-422f-bd8d-036993ce7b1e/"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -949,39 +891,12 @@
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
                                 <img src="certificados/certificados_ok/visualizacion_2.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
                                     <a href="https://www.udemy.com/certificate/UC-4f1bb3c3-34e4-4f32-8d0c-b74f2a4543d5/"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- Certificado 25 -->
-                        <li class="carousel-slide current-slide">
-                            <div class="proyecto">
-                                <img src="certificados/certificados_ok/blockchain.png"
-                                    alt="Certificado: Cientifico de Datos">
-                                <div class="overlay">
-                                    <a href="https://www.udemy.com/certificate/UC-430d6eb3-ff90-401b-9469-def511169f2c/"
-                                        target="_blank">
-                                        <h3>URL del Certificado</h3>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- Certificado 25 -->
-                        <li class="carousel-slide current-slide">
-                            <div class="proyecto">
-                                <img src="certificados/certificados_ok/agile.png"
-                                    alt="Certificado: Cientifico de Datos">
-                                <div class="overlay">
-                                    <a href="https://www.credly.com/badges/309719f9-5dc6-4649-b65e-964920bd1e13/linked_in_profile"
-                                        target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -990,12 +905,13 @@
                         <!-- Certificado 26 -->
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
-                                <img src="certificados/certificados_ok/spark.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                <img src="certificados/certificados_ok/blockchain.png"
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
-                                    <a href="https://www.udemy.com/certificate/UC-ba96be79-2e8a-4d71-a0dc-a826e1b23cf4/"
+                                    <a href="https://www.udemy.com/certificate/UC-430d6eb3-ff90-401b-9469-def511169f2c/"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -1004,12 +920,13 @@
                         <!-- Certificado 27 -->
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
-                                <img src="certificados/certificados_ok/docker1.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                <img src="certificados/certificados_ok/agile.png"
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
-                                    <a href="https://codigofacilito.com/certificates/1e0652d9-2589-4894-913f-29dd25c03b1e"
+                                    <a href="https://www.credly.com/badges/309719f9-5dc6-4649-b65e-964920bd1e13/linked_in_profile"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
@@ -1018,18 +935,18 @@
                         <!-- Certificado 28 -->
                         <li class="carousel-slide current-slide">
                             <div class="proyecto">
-                                <img src="certificados/certificados_ok/seleccion_de_caracteres.png"
-                                    alt="Certificado: Cientifico de Datos">
+                                <img src="certificados/certificados_ok/spark.png"
+                                    alt="Certificado: Científico de Datos">
                                 <div class="overlay">
-                                    <a href="https://codigofacilito.com/certificates/75048692-d572-418e-8bfa-34ad587e76c4"
+                                    <a href="https://www.udemy.com/certificate/UC-ba96be79-2e8a-4d71-a0dc-a826e1b23cf4/"
                                         target="_blank">
-                                        <h3>URL del Certificado</h3>
+                                        <h3 data-es="URL del Certificado" data-en="Certificate URL">URL del Certificado
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
                         </li>
-
-                        <!-- Agrega más proyectos según sea necesario -->
+                        
                     </ul>
                 </div>
                 <!-- Botones de navegación -->

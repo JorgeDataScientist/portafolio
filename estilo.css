@@ -830,3 +830,29 @@ footer .arriba{
 
 
 
+/* Estilo para el botón de cambio de idioma */
+#language-toggle {
+    font-size: 16px; /* Ajusta el tamaño del texto */
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 5px 10px; /* Ajusta el tamaño del botón */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+/* Color cuando el idioma es EN (Inglés) */
+#language-toggle[data-language="en"] {
+    color: #ed3ab4; /* Color verde claro */
+}
+
+/* Color cuando el idioma es ES (Español) */
+#language-toggle[data-language="es"] {
+    color: #ed3ab4; /* Color verde más intenso */
+}
+
+/* Estilo de transición cuando el idioma cambia */
+#language-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo al pasar el mouse */
+}
+
+
