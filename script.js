@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Función para abrir los enlaces del CV
 function openCV() {
     window.open('https://drive.google.com/file/d/11ZEgum0va64D-yFlM7NjzvqkuqZ8Thk8/view?usp=sharing', '_blank');
-    window.open('https://drive.google.com/file/d/1afL-Y7HH2RSdbEH_aY7HNI_clm7_wTgS/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/11ZEgum0va64D-yFlM7NjzvqkuqZ8Thk8/view?usp=sharing', '_blank');
 }
 
 // Función que abre varios enlaces relacionados con proyectos
