@@ -275,7 +275,7 @@ html{
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 87%;}
 }
 
 .skills .skill .htmlcss{
@@ -284,7 +284,7 @@ html{
 }
 @keyframes htmlcss {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 84%;}
 }
 
 .skills .skill .photoshop{
@@ -293,7 +293,7 @@ html{
 }
 @keyframes photoshop {
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 88%;}
 }
 
 .skills .skill .wordpress{
@@ -311,7 +311,7 @@ html{
 }
 @keyframes drupal {
     0%{width: 0%;}
-    100%{width: 52%;}
+    100%{width: 82%;}
 }
 
 .skills .skill .comunicacion{
@@ -320,7 +320,7 @@ html{
 }
 @keyframes comunicacion {
     0%{width: 0%;}
-    100%{width: 95%;}
+    100%{width: 81%;}
 }
 
 .skills .skill .trabajo{
@@ -329,7 +329,7 @@ html{
 }
 @keyframes trabajo {
     0%{width: 0%;}
-    100%{width: 95%;}
+    100%{width: 99%;}
 }
 
 .skills .skill .creatividad{
@@ -356,7 +356,7 @@ html{
 }
 @keyframes proyect {
     0%{width: 0%;}
-    100%{width: 99%;}
+    100%{width: 100%;}
 }
 /* SECCION CURRICULUM */
 .curriculum{
